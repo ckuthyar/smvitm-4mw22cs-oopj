@@ -17,11 +17,8 @@ public class OTP1 {
 		}
 		return otp.toString();
 	}
-
 	public static void main(String[] args) {
-		ArrayList<String>otplist = new ArrayList<>();
-		int size=6;
-		int count=10;
+		int size=6,count=10;
 		System.out.println(genOTP1(size));
 		System.out.println(genOTP1(size,count));
 	}
