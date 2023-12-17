@@ -7,7 +7,7 @@ public class ByteShift1 {
 		byte a=64; // 0100 0000 (2**6)
 		byte out1;
 		int out2;
-		out1=(byte)(a<<2);  //without casting, compilation error
+		out1=(byte)(a<<1);  //without casting, compilation error
 		out2=a<<2;
 		System.out.println("out1: "+out1);
 		System.out.println("out2: "+out2);
