@@ -20,3 +20,6 @@ public class TestCalc3 {
 		System.out.println("Inverse is "+inv);
 	}
 }
+
+
+
