@@ -1,14 +1,14 @@
 package bank2;
-abstract class Figure{
+abstract class ClosedFigure{
 	double dimen1;
 	double dimen2;
-	Figure(double a, double b){
+	ClosedFigure(double a, double b){
 		this.dimen1=a;
 		this.dimen2=b;
 	}
 	abstract double calcArea();
 }
-class Rectangle extends Figure{
+class Rectangle extends ClosedFigure{
 	Rectangle(double a, double b) {
 		super(a, b);
 	}
@@ -16,7 +16,7 @@ class Rectangle extends Figure{
 		return dimen1*dimen2;
 	}
 }
-class Triangle extends Figure{
+class Triangle extends ClosedFigure{
 	Triangle(double a, double b) {
 		super(a, b);
 	}

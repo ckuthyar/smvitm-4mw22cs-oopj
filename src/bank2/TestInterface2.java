@@ -2,9 +2,9 @@ package bank2;
 
 interface FlyingObject{}
 interface Camera{}
-class Vehicle{}
+abstract class Vehicle{}
 
-class FourWheeler extends Vehicle{}
+abstract class FourWheeler extends Vehicle{}
 class Car extends FourWheeler{}
 
 class Aeroplane extends Vehicle implements FlyingObject{}
