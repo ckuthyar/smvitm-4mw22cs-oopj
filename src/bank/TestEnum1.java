@@ -7,5 +7,4 @@ public class TestEnum1 {
 		DayOfWeek sun=DayOfWeek.SUNDAY;
 		System.out.println(mon + " is a holiday due to Ayodhya temple inauguration");
 	}
-
 }
