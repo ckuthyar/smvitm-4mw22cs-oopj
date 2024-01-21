@@ -1,4 +1,7 @@
 package bank2;
+interface Taxable{
+	 double calcGST(double price);
+}
 class AnyBox{
 	int length;
 	int width;
@@ -14,7 +17,7 @@ class AnyBox{
 		return volume*rateV;
 	}
 }
-class AnyHeavyBox extends AnyBox{          //use of inheritance. Parent class, Child class
+class AnyHeavyBox extends AnyBox implements Taxable{          //use of inheritance. Parent class, Child class
 	double weight;
 	static final double rateW=6;
 	AnyHeavyBox(int l, int w, int h, double wt) {
@@ -23,6 +26,10 @@ class AnyHeavyBox extends AnyBox{          //use of inheritance. Parent class, C
 	}
 	double getPrice2() {
 		return getPrice()*weight*rateW;         //getPrice() methodOverloading
+	}
+	public double calcGST(double price) {
+		price=price*1.18;
+		return price;
 	}
 }
 public class TestCourier {
@@ -34,9 +41,9 @@ public class TestCourier {
 		double amt1=box1.getPrice();
 		double amt2=box2.getPrice();
 		double amt3= box3.getPrice2();
-		System.out.println("box1 - "+"Rs " +amt1); //chalkpiece box - light weight
-		System.out.println("box2 - "+"Rs " +amt2); //keyboard box - light weight
-		System.out.println("box3 - "+"Rs " +amt3); //Java Complete Reference book - very heavy
+		System.out.println("box1 - "+"Rs " +amt1); 
+		System.out.println("box2 - "+"Rs " +amt2);
+		System.out.println("box3 - "+"Rs " +amt3); 
 	}
 }
 

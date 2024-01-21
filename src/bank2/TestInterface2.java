@@ -4,6 +4,8 @@ interface FlyingObject{}
 interface Camera{}
 abstract class Vehicle{}
 
+
+
 abstract class FourWheeler extends Vehicle{}
 class Car extends FourWheeler{}
 
