@@ -1,4 +1,5 @@
 package bank2;
+@FunctionalInterface
 interface Taxable{
 	 double calcGST(double price);
 }
@@ -24,8 +25,8 @@ class AnyHeavyBox extends AnyBox implements Taxable{          //use of inheritan
 		super(l, w, h);   
 		this.weight=wt; //super keyword
 	}
-	double getPrice2() {
-		return getPrice()*weight*rateW;         //getPrice() methodOverloading
+	double getPrice() {
+		return super.getPrice()*weight*rateW;         //getPrice() methodOverloading
 	}
 	public double calcGST(double price) {
 		price=price*1.18;
@@ -40,7 +41,7 @@ public class TestCourier {
 		AnyHeavyBox box3 = new AnyHeavyBox(4,2,1, 4);
 		double amt1=box1.getPrice();
 		double amt2=box2.getPrice();
-		double amt3= box3.getPrice2();
+		double amt3= box3.getPrice();
 		System.out.println("box1 - "+"Rs " +amt1); 
 		System.out.println("box2 - "+"Rs " +amt2);
 		System.out.println("box3 - "+"Rs " +amt3); 
