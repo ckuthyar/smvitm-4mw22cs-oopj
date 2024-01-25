@@ -4,11 +4,23 @@ public class TestException5 {
 		int rate;
 		int[] amount= {100,200,400,600};
 		int[] qty = {1,0,4,6};
-		try {
+		int amt1=0;
+		int qt1=0;
+		
 			for(int i=0;i<5;i++) {
-				rate=amount[i]/qty[i];
-				System.out.println(amount[i] +","+qty[i]+","+rate);}}
-		catch(ArithmeticException ae1) {
-			System.out.println(ae1);}
-		catch(IndexOutOfBoundsException iobe1) {
-			System.out.println(iobe1);}}}
+				try {
+					amt1=amount[i];
+					qt1 = qty[i];
+				}
+				catch(ArrayIndexOutOfBoundsException aiobe1){
+					System.out.println(aiobe1);
+				}
+				try {
+					rate=amt1/qt1;
+					System.out.println(amt1+","+qt1+","+rate);
+				}
+				catch(ArithmeticException ae1) {
+					System.out.println(ae1);}
+			}
+}
+}
