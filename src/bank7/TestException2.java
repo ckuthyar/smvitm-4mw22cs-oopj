@@ -9,5 +9,5 @@ public class TestException2 {
 			System.out.println(rate);
 			System.out.println("This line within try after the exception will not be printed");}
 		catch(ArithmeticException ae) {
-			System.out.println("Exception - Division by Zero");}
+			System.out.println("Are you all tired ?");}
 		System.out.println("After catch statement");}}	
