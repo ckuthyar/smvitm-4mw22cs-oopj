@@ -1,5 +1,4 @@
 package bank7;
-
 public enum EnumMonths1 {
 	JAN,FEB,MAR,APR,MAY,JUN,JUL,AUG,SEP,OCT,NOV,DEC;
 	public static void main(String[] args) {
