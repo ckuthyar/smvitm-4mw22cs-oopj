@@ -19,8 +19,8 @@ public enum EnumColors1 {
 		Scanner sc1=new Scanner(System.in);
 		System.out.println("Enter color to get code");
 		String color1=sc1.next();
-		String color2=color1.toUpperCase();
-		System.out.println(EnumColors1.valueOf(color1));
+		String color2=color1.toLowerCase();
+		// System.out.println(EnumColors1.valueOf(color1));
 		System.out.println(EnumColors1.valueOf(color2));
 		System.out.println(EnumColors1.valueOf(color2).getCode());}
 }

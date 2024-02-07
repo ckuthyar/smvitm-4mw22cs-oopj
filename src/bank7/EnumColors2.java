@@ -26,8 +26,5 @@ public enum EnumColors2 {
 		System.out.println(enum1.compareTo(enum1));
 		System.out.println(enum1.getDeclaringClass());
 		System.out.println(enum1.valueOf("RED"));
-		//System.out.println(enum1.finalize());
-	}
-
-
+		//System.out.println(enum1.finalize());}
 }

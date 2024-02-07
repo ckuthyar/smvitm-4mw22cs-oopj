@@ -20,6 +20,6 @@ public class TestBank1 {
 		System.out.println("Enter command");
 		inputCommand=sc1.nextLine();
 		//System.out.println(Command.valueOf(inputCommand));
-		System.out.println(Command.valueOf(inputCommand.toUpperCase()));
+		System.out.println(Command.valueOf(inputCommand));
 		System.out.println(Command.QUIT.ordinal());
 		System.out.println(Command.OPEN.toString());}}
